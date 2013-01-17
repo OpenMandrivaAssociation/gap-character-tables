@@ -31,9 +31,11 @@ gzip --best data/*.tbl
 mkdir -p $RPM_BUILD_ROOT%{_gap_dir}/pkg/ctbllib
 cp -a data doc gap4 tst *.g $RPM_BUILD_ROOT%{_gap_dir}/pkg/ctbllib
 
-%posttrans -p %{_bindir}/update-gap-workspace
+%posttrans
+    %{_bindir}/update-gap-workspace
 
-%postun -p %{_bindir}/update-gap-workspace
+%postun
+    %{_bindir}/update-gap-workspace
 
 %files
 %doc README htm
