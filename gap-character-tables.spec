@@ -2,10 +2,8 @@
 
 Name:           gap-character-tables
 Version:        %(echo %upstreamver | sed -r "s/r|p/./g")
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        GAP Character Table Library
-
-Group:          Sciences/Mathematics
 License:        GPLv2+
 URL:            http://www.math.rwth-aachen.de/~Thomas.Breuer/ctbllib/
 Source0:        http://www.math.rwth-aachen.de/~Thomas.Breuer/ctbllib/ctbllib-%{upstreamver}.tar.gz
@@ -40,10 +38,3 @@ cp -a data doc gap4 tst *.g $RPM_BUILD_ROOT%{_gap_dir}/pkg/ctbllib
 %files
 %doc README htm
 %{_gap_dir}/pkg/ctbllib/
-
-%changelog
-* Thu Sep 13 2012 Jerry James <loganjerry@gmail.com> - 1.2.1-1
-- New upstream release
-
-* Wed Jan  4 2012 Jerry James <loganjerry@gmail.com> - 1.1.3-1
-- Initial RPM
