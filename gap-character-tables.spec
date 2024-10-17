@@ -7,7 +7,7 @@ Summary:        GAP Character Table Library
 
 
 License:        GPLv2+
-URL:            http://www.math.rwth-aachen.de/~Thomas.Breuer/ctbllib/
+URL:            https://www.math.rwth-aachen.de/~Thomas.Breuer/ctbllib/
 Source0:        http://www.math.rwth-aachen.de/~Thomas.Breuer/ctbllib/ctbllib-%{upstreamver}.tar.gz
 BuildArch:      noarch
 
